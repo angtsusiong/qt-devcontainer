@@ -8,12 +8,12 @@ ENV LANG="en_US.UTF-8" \
     TERM="xterm-256color" \
     ANDROID_ARCH="android_arm64_v8a" \
     ANDROID_SDK_ROOT="/opt/android-sdk" \
-    ANDROID_NDK_ROOT=${ANDROID_SDK_ROOT}/ndk/25.2.9519653 \
+    ANDROID_NDK_ROOT="/opt/android-sdk/ndk/25.2.9519653" \
     QT_VERSION="6.6.1" \
     QT_PATH="/opt/Qt" \
-    Qt6_DIR=${QT_PATH}/${QT_VERSION}/${ANDROID_ARCH} \
-    QT_PLUGIN_PATH=${Qt6_DIR}/plugins \
-    QML2_IMPORT_PATH=${Qt6_DIR}/qml 
+    Qt6_DIR="/opt/Qt/6.6.1/android_arm64_v8a" \
+    QT_PLUGIN_PATH="/opt/Qt/6.6.1/android_arm64_v8a/plugins" \
+    QML2_IMPORT_PATH="/opt/Qt/6.6.1/android_arm64_v8a/qml"
 
 RUN set -xe && \
     echo "==== Setting locale ====" && \
